@@ -1,0 +1,112 @@
+# This is a file
+
+Go's present tool
+19 Sept 2013
+Tags: present, presentations, slides
+
+Nick Presta
+Developer, Wave
+@nickpresta
+nick@nickpresta.ca
+http://nickpresta.ca/
+https://github.com/nickpresta
+
+# Start of Content
+
+* Who am I?
+
+- Developer at Wave - [[https://waveapps.com]]
+- [[https://github.com/nickpresta]]
+- Hobbyist Go user since late 2011 (r59)
+
+* What is Present?
+
+- Tool that generates interactive presentations (and tours!)
+- Browser based (runs on modern browsers)
+- Written in Go (and HTML, CSS, JavaScript, WebSockets, etc)
+- Allows code execution, remote file loading, has automatic formatting, etc
+
+* How to get and use Present?
+
+- Like everything else in the Go ecosystem, you use the standard tooling:
+    go get code.google.com/p/go.talks/present
+- This will install `present` into `$GOSRC/bin`, which should be in your `$PATH`
+- Use `present` to start a presentation, open your browser to `localhost:3999`
+
+* How to write a .slide file?
+
+- Text based
+- Similar to Markdown
+- Docs available at [[http://godoc.org/code.google.com/p/go.talks/pkg/present][GoDoc]]
+- Example:
+
+    * This is a heading
+    - And some bullet points
+    - As many as you like
+
+    .image images/example.png
+
+    - Here is some inline code:
+        func f(b int) {
+            return b * 2
+        }
+
+    - And some externally linked code:
+    .play code/example.go
+
+
+
+* Why use Present?
+
+* Interactivity
+
+- Interactive Go presentations (like this one!)
+
+.play support/code/example.go
+
+- I mean *REALLY* interactive
+
+.play support/code/server.go /START OMIT/,/END OMIT/
+
+* Easy to share
+
+- Check out [[goto.ngrok.com]] right now!
+- Everything is plain text (minus images)
+- Browser based means no special software
+- Works _okay_ on a smartphone
+
+* Limitations
+
+- Custom styling impossible without changing source
+- No syntax highlighting
+- Rigid in general
+- Works great, in my experience, for Go content
+
+* But wait! There's more!
+
+* GoTour
+
+- Create your own Tour (see: [[http://tour.golang.org]])
+    go get code.google.com/p/go-tour/gotour
+- Installs to `$GOSRC/bin`, use the `gotour` command
+- `gotour` accepts valid `.slide` files (may require some tweaking, though!)
+- Great for tutorial-style presentations, as the editor is much better
+
+* Articles
+
+- Build single page articles from `.slide` files (much better for mobile devices)
+- Same format, everything just works
+
+* Conclusion
+
+- `present` is awesome!
+- Use it when you have a lot of runnable code samples
+- Use it even when you don't (maybe)
+
+* Further Reading
+
+- [[http://godoc.org/code.google.com/p/go.talks/pkg/present]] - GoDoc
+- [[https://code.google.com/p/go/source/browse?repo=talks]] - Present source
+- [[https://code.google.com/p/go-tour/source/browse/]] - Gotour source
+- [[https://github.com/garyburd/talksapp]] - Possibly offering PaaS (Present as a Service)
+- [[https://github.com/cmars/represent]] - Represent, a wrapper around present to publish a static presentation
