@@ -21,7 +21,7 @@ https://github.com/nickpresta
 
 * What is Present?
 
-- Tool that generates interactive presentations (and tours!)
+- Tool that generates interactive presentations and articles
 - Browser based (runs on modern browsers)
 - Written in Go (and HTML, CSS, JavaScript, WebSockets, etc)
 - Allows code execution, remote file loading, has automatic formatting, etc
@@ -32,6 +32,7 @@ https://github.com/nickpresta
     go get code.google.com/p/go.talks/present
 - This will install `present` into `$GOSRC/bin`, which should be in your `$PATH`
 - Use `present` to start a presentation, open your browser to `localhost:3999`
+- Will look for any `.slide` files in that directory
 
 * How to write a .slide file?
 
@@ -54,7 +55,10 @@ https://github.com/nickpresta
     - And some externally linked code:
     .play code/example.go
 
+* Articles
 
+- Build single page articles from `.slide` files (much better for mobile devices)
+- Same format, everything just works
 
 * Why use Present?
 
@@ -92,11 +96,6 @@ https://github.com/nickpresta
 - `gotour` accepts valid `.slide` files (may require some tweaking, though!)
 - Great for tutorial-style presentations, as the editor is much better
 
-* Articles
-
-- Build single page articles from `.slide` files (much better for mobile devices)
-- Same format, everything just works
-
 * Conclusion
 
 - `present` is awesome!
@@ -110,3 +109,4 @@ https://github.com/nickpresta
 - [[https://code.google.com/p/go-tour/source/browse/]] - Gotour source
 - [[https://github.com/garyburd/talksapp]] - Possibly offering PaaS (Present as a Service)
 - [[https://github.com/cmars/represent]] - Represent, a wrapper around present to publish a static presentation
+- [[https://github.com/nickpresta/gototalks]] - This presentation
