@@ -38,7 +38,7 @@ https://github.com/nickpresta
 
 - Text based
 - Similar to Markdown
-- Docs available at [[http://godoc.org/code.google.com/p/go.talks/pkg/present][GoDoc]]
+- Docs available at [[http://godoc.org/code.google.com/p/go.tools/present][GoDoc]]
 - Example:
 
     * This is a heading
@@ -104,9 +104,9 @@ https://github.com/nickpresta
 
 * Further Reading
 
-- [[http://godoc.org/code.google.com/p/go.talks/pkg/present]] - GoDoc
-- [[https://code.google.com/p/go/source/browse?repo=talks]] - Present source
-- [[https://code.google.com/p/go-tour/source/browse/]] - Gotour source
+- [[http://godoc.org/code.google.com/p/go.tools/present]] - GoDoc
+- [[https://code.google.com/p/go/source/browse?repo=tools]] - Present source
+- [[https://code.google.com/p/go-tour/]] - Go-tour source
 - [[https://github.com/garyburd/talksapp]] - Possibly offering PaaS (Present as a Service)
 - [[https://github.com/cmars/represent]] - Represent, a wrapper around present to publish a static presentation
 - [[https://github.com/nickpresta/gototalks]] - This presentation
